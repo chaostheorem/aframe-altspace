@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AltspaceVR Sample Project for A-Frame</title>
+		<script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+		<script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.0.0/dist/aframe-altspace-component.min.js"></script>
+        <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+	</head>
+	<body>
+		<a-scene altspace='vertical-align: bottom;'>
+		
+			<a-assets>
+				<!-- no assets in the template, but you can load yours here! -->
+			</a-assets>
+			
+      <a-sphere position="0 1.25 -2" radius="1.25" color="gold"></a-sphere>
+			
+      <a-sphere position="3 0.75 -4" radius="1.25" color="blue"></a-sphere>
+      
+      <a-entity bmfont-text="text: GO BEARS; color: #333; size: 50" position="2 0.5 -2"></a-entity>
+      
+			<a-entity position='0 0 1.5'>
+				<a-camera />
+			</a-entity>
+		</a-scene>
+	</body>
+</html>
